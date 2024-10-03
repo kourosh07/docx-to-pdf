@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOCX to PDF in Node.js</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #8ec5fc;
+        background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      form {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 400px;
+        text-align: center;
+      }
+
+      input[type="file"] {
+        margin-bottom: 15px;
+        padding: 10px;
+        width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      input[type="submit"] {
+        background-color: #3d5afe;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s;
+        width: 100%;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+
+      h1 {
+        color: #304FFE;
+      }
+
+      h2 {
+        font-family: cursive;
+        color: #607d8b;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form action="/docxtopdf" method="post" enctype="multipart/form-data">
+      <h1>Document Converter</h1>
+      <h2>Convert DOCX to PDF</h2>
+      <input type="file" name="file" required />
+      <br />
+      <input type="submit" value="Download PDF File" />
+    </form>
+  </body>
+</html>
